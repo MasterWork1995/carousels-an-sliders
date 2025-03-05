@@ -1,0 +1,18 @@
+<div
+  class="anita-flat-carousel anita-carousel-gallery"
+  data-size="0.82"
+  data-prev-label="Previous Photo"
+  data-next-label="Next Photo"
+>
+  {{#each items}}
+    <div class="anita-gallery-item" data-type="image">
+      <img
+        class="anita-lazy"
+        data-src={{src}}
+        alt={{alt}}
+        width={{width}}
+        height={{height}}
+      />
+    </div>
+  {{/each}}
+</div>

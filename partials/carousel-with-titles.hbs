@@ -1,0 +1,31 @@
+<div class="anita-carousel-gallery-wrap anita-scrollEW">
+  <div
+    class="anita-albums-listing anita-flat-carousel anita-carousel-gallery"
+    data-prev-label="Previous Work"
+    data-next-label="Next Work"
+  >
+    {{#each items}}
+      <div class="anita-gallery-item {{#if this.isVideo}}is-video{{else}}is-image{{/if}}" data-type="{{#if this.isVideo}}video{{else}}image{{/if}}">
+        {{#if this.isVideo}}            
+            <video src={{src}} playsinline muted loop></video>
+            {{else}}        
+            <img
+              class="anita-lazy"
+              data-src={{src}}
+              alt={{title}}
+              width={{width}}
+              height={{height}}
+            />
+        {{/if}}
+        <div class="anita-gallery-item__content" data-aos="fade-up">
+          <span class="anita-meta anita-gallery__meta">{{subtitleTop}}</span>
+          <h2 class="anita-gallery__caption anita-caption">
+            <sup>{{number}}</sup>{{title}}
+          </h2>
+          <span class="anita-gallery__explore">{{subtitleBot}}</span>
+          <a href={{href}} class="anita-album-link"></a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

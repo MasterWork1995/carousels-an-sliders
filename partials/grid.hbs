@@ -1,0 +1,30 @@
+<section class="anita-section">
+  <div
+    class="anita-grid-gallery anita-grid--{{col}}cols anita-zoom-hover anita-item-zoom-hover anita-item-fade-hover"
+  >
+    {{#each items}}
+      <div
+        class="anita-grid-gallery-item"
+        data-aos="fade-up"
+        data-aos-delay="0"
+      >
+        <div class="anita-grid-item__inner">
+          <div class="anita-grid-item__image">
+            <img
+              class="anita-lazy"
+              data-src={{src}}
+              alt={{alt}}
+              width={{width}}
+              height={{height}}
+            />
+          </div>
+            <a 
+            href={{href}} class="anita-lightbox-link" 
+            data-size={{size}} 
+            data-type="{{#if isVideo}}video{{else}}image{{/if}}"
+          ></a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</section>

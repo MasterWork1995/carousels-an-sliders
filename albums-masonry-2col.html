@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Page Title -->
+    <title>Page title</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Rajdhani:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Template Config -->
+    <link type="text/css" rel="stylesheet" href="css/config.css" />
+    <!-- Libraries -->
+    <link type="text/css" rel="stylesheet" href="css/libs.css" />
+    <!-- Template Styles -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!-- Responsive -->
+    <link type="text/css" rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" sizes="32x32" />
+  </head>
+  <body>
+    <!-- Page Background -->
+    <div class="anita-page-background-wrap"></div>
+    <!-- Page Main -->
+    <main class="anita-main"></main>
+    <!-- Footer -->
+    <footer id="anita-footer" class="is-sticky"></footer>
+
+    <!-- JS Scripts -->
+    <script src="js/handlebars.min.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/aos.min.js"></script>
+    <script src="js/dataConfig.ts"></script>
+    <script src="js/initContent.js"></script>
+    <script>
+      setTimeout(function () {
+        const script = document.createElement("script");
+        script.src = "js/core.js";
+        script.async = true;
+        document.body.appendChild(script);
+      }, 100);
+    </script>
+  </body>
+</html>

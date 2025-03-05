@@ -1,0 +1,16 @@
+<div
+  class="anita-gl-container anita-gl-{{galleryType}}-gallery"
+  data-prev-label="Previous Photo"
+  data-next-label="Next Photo"
+  data-type={{type}}
+  data-fit="cover"
+  data-intensity="0.5"
+>
+  {{#each items}}
+    <div
+      class="anita-gl-gallery-item {{#if isVideo}}is-video{{/if}}"
+      data-src="{{this.src}}"
+      data-size="{{this.size}}"
+    ></div>
+  {{/each}}
+</div>

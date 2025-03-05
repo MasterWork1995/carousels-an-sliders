@@ -1,0 +1,19 @@
+<header id="anita-header" class="anita-header">
+  <div class="anita-header-inner">
+    <div class="anita-logo-wrapper">
+      <a href="index.html" class="anita-logo is-retina">
+        <img src={{logoPath}} alt="logo" height="80" />
+      </a>
+    </div>
+    <div class="anita-menu-wrapper">
+      {{#if simple}}
+        <nav class="anita-nav anita-simple-nav anita-js-menu"></nav>{{else}}
+        <a href="#" class="anita-menu-toggler">
+          <i class="anita-menu-toggler-icon"></i>
+        </a>{{/if}}
+    </div>
+  </div>
+</header>
+<div class="anita-fullscreen-menu-wrap">
+  <nav class="anita-nav anita-js-menu"></nav>
+</div>
