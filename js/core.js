@@ -54,6 +54,12 @@ const anita_config = {
   },
 };
 
+/* --- Activate Preloader --- */
+jQuery("body").append(
+  '<div class="anita-preloader-wrap"><div class="anita-preloader-spotlight anita-spotlight"></div></div>'
+);
+jQuery("body").addClass("is-loading");
+
 /* --- Checking WebGL2 Availability --- */
 function Anita_isWebGL2Available() {
   try {
@@ -2226,4 +2232,3 @@ class Anita {
 }
 
 let anita = new Anita(anita_config);
-anita.layout();
