@@ -33,7 +33,7 @@ function renderPageBackground(pageName) {
 async function loadPartials(partials) {
   const partialPromises = partials.map(async (partial) => {
     try {
-      const response = await fetch(`../partials/${partial}.hbs`);
+      const response = await fetch(`/partials/${partial}.hbs`);
       if (!response.ok) throw new Error(`Failed to load ${partial}.hbs`);
       const template = await response.text();
       Handlebars.registerPartial(partial, template);
