@@ -357,5 +357,10 @@ async function initContent() {
   script.async = true;
   document.body.appendChild(script);
 }
+/* --- Activate Preloader --- */
+jQuery("body").append(
+  '<div class="anita-preloader-wrap"><div class="anita-preloader-spotlight anita-spotlight"></div></div>'
+);
+jQuery("body").addClass("is-loading");
 
 initContent().catch((error) => console.error("InitContent failed:", error));
