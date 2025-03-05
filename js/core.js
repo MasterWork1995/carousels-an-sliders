@@ -2226,3 +2226,4 @@ class Anita {
 }
 
 let anita = new Anita(anita_config);
+anita.layout();

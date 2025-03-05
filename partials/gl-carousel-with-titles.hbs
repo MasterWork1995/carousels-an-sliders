@@ -1,18 +1,18 @@
-<div class="anita-gl-container-wrap anita-albums-listing anita-gl-carousel-gallery-wrap anita-scrollEW">
-  <div class="anita-gl-container anita-gl-{{galleryType}}-gallery" data-prev-label="Previous" data-next-label="Next">
+<div class="anita-gl-container-wrap anita-albums-listing anita-gl-{{galleryType}}-gallery-wrap anita-scrollEW">
+  <div class="anita-gl-container anita-gl-{{galleryType}}-gallery" data-prev-label="Previous" data-next-label="Next"
+    data-type={{type}} data-fit="cover" data-intensity="0.5">
     {{#each items}}
-      <div class="anita-gl-gallery-item {{#if this.isVideo}}is-video{{else}}is-image{{/if}}" 
-           data-src="{{this.src}}" 
-           data-size="{{this.size}}">
-        <div class="anita-gl-gallery-item__content" data-aos="fade-up">
-          <span class="anita-meta anita-gl-gallery__meta">{{subtitleTop}}</span>
-          <h2 class="anita-gl-gallery__caption">
-            <sup>{{number}}</sup>{{title}}
-          </h2>
-          <span class="anita-gl-gallery__explore">{{subtitleBot}}</span>
-          <a href="{{href}}" class="anita-album-link"></a>
-        </div>
+    <div class="anita-gl-gallery-item {{#if this.isVideo}}is-video{{else}}is-image{{/if}}" data-src="{{this.src}}"
+      data-size="{{this.size}}">
+      <div class="anita-gl-gallery-item__content" data-aos="fade-up">
+        <span class="anita-meta anita-gl-gallery__meta">{{subtitleTop}}</span>
+        <h2 class="anita-gl-gallery__caption">
+          <sup>{{number}}</sup>{{title}}
+        </h2>
+        <span class="anita-gl-gallery__explore">{{subtitleBot}}</span>
+        <a href="{{href}}" class="anita-album-link"></a>
       </div>
+    </div>
     {{/each}}
   </div>
 </div>

@@ -254,6 +254,7 @@ function sliderInit(pageName) {
     const sliderHtml = sliderTemplate({
       items: data.items,
       galleryType: "slider",
+      type: data.listingType,
     });
     main.insertAdjacentHTML("beforeend", sliderHtml);
   }

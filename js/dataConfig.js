@@ -1773,18 +1773,22 @@ const dataConfig = {
       },
       items: [
         {
-          src: "img/albums/album03/01.jpg",
+          isVideo: true,
+          src: "video/albums/album01.mp4",
           size: "1920x1080",
         },
         {
+          isVideo: false,
           src: "img/albums/album03/02.jpg",
           size: "1920x1080",
         },
         {
+          isVideo: false,
           src: "img/albums/album03/03.jpg",
           size: "1920x1080",
         },
         {
+          isVideo: false,
           src: "img/albums/album03/04.jpg",
           size: "1920x1080",
         },
@@ -2502,7 +2506,7 @@ const dataConfig = {
       pageTitle: "Anita | Works: Parallax Slider",
       favIconPath: "img/favicon.png",
       logoPath: "img/logo.png",
-      listingType: "pixel",
+      listingType: "parallax",
       items: [
         {
           isVideo: true,
@@ -2690,7 +2694,7 @@ const dataConfig = {
       pageTitle: "Anita | Works: Pixel Storm Slider",
       favIconPath: "img/favicon.png",
       logoPath: "img/logo.png",
-      listingType: "parallax",
+      listingType: "pixel",
       items: [
         {
           isVideo: true,
